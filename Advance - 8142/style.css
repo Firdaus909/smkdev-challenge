@@ -1,0 +1,108 @@
+:root,
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 2rem;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.title p {
+  font-size: 1.12rem;
+  color: #333;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: #ddd;
+}
+
+.input input {
+  padding: 1rem;
+  outline: none;
+  border: 0;
+  border-radius: 0.5rem;
+  width: 5rem;
+  text-align: center;
+}
+
+.input input::-webkit-inner-spin-button,
+.input input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.input button {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+.input button:hover {
+  background-color: #eee;
+  color: #333;
+}
+
+.result {
+  width: 100%;
+  padding: 2rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.result h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.result ul li {
+  list-style: none;
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  animation: .5s fadeIn ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.error {
+    display: none;
+    color: red;
+    padding: 2rem;
+}
