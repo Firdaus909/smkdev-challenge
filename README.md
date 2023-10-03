@@ -1,2 +1,1 @@
-"# smkdev-challenge" 
-"# smkdev-challenge" 
+# smkdev-challenge
